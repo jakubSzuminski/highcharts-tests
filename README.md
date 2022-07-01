@@ -1,7 +1,7 @@
 # highcharts-tests
 ## Tests - Why to even bother?
 
-** Ugh, where to even start :) **
+**Ugh, where to even start :)**
 
 Tests allow us to save time spent on debugging problems after they are visible in the final project.
 Often, when we are creating the code, we are changing common functions, used in many places in the app. In this case,
@@ -88,7 +88,7 @@ Additionally, it’s common to use a combination of several tools.
 8. Browser Controllers - simulate user actions for Functional Tests. 
 9. Visual Regression Tools - compare your site to its previous versions visually by using image comparison techniques.
 
-* Some more words about Mocks, spies and Stubs *
+**Some more words about Mocks, spies and Stubs**
 Spies provide us with information about functions. For example, how many times were they called, in which cases, and by whom. Spies are used in integration tests to make sure that the side effects of a process are as expected. For example, how many times was a calculation function called during some process?
 
 Stubbing or dubbing replaces selected methods of existing modules with user-supplied functions in order to ensure expected behavior during the test.
