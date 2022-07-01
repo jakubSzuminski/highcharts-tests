@@ -1,5 +1,3 @@
-const Highcharts = require('highcharts');
-
 QUnit.module('Simple Chart test', function() {
     QUnit.test('Chart loaded', function(assert) {
 
