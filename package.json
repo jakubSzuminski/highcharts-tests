@@ -4,7 +4,7 @@
   "description": "classroom for understanding tests",
   "main": "app.js",
   "scripts": {
-    "test": "karma start",
+    "test": "./node_modules/karma/bin/karma start",
     "test-hc": "npx gulp test-ts --force && npx gulp test --force --speak"
   },
   "repository": {
@@ -23,12 +23,11 @@
   "homepage": "https://github.com/blacklabel/highcharts-tests#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "gulp": "^4.0.2",
     "highcharts": "^10.1.0",
-    "karma": "^6.4.0",
     "qunit": "^2.19.1"
   },
   "devDependencies": {
+    "karma": "^6.4.0",
     "karma-chrome-launcher": "^3.1.1",
     "karma-qunit": "^4.1.2"
   }
