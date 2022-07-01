@@ -48,3 +48,9 @@ git commit -m "Keep calm and commit"
 5. Check, if the Husky is working properly, then change the script so test will work on npm test-hc instead of npm test. 
 
 6. If above works, make a commit again and check if Husky works, if not, make necessary adjustmennts.
+
+# Pixelmatch
+
+1. Add pixelmatch to your project, usign `npm install pixelmatch`
+2. Create two images from the chart, moving one dataLabel couple of pixels off the second time.
+3. Use pixelmatch to create an output of the difference image in test directory.
