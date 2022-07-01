@@ -27,3 +27,24 @@
 6. Change configuration so Karma will open chrome window on run
 7. Change Karma configuration so it will not close after finishing last test.
 8. Allow Karma to work with other Highcharts libraries (Maps / Stock / Gantt / Choosen module).
+
+## Husky
+1. Add Husky to your project, using `npm install husky -D`
+2. Edit package.json > prepare script and run it once:
+```
+npm set-script prepare "husky install"
+npm run prepare
+```
+3. Add a hook:
+```
+npx husky add .husky/pre-commit "npm test"
+git add .husky/pre-commit
+```
+4. Make a commit
+```
+git commit -m "Keep calm and commit"
+```
+
+5. Check, if the Husky is working properly, then change the script so test will work on npm test-hc instead of npm test. 
+
+6. If above works, make a commit again and check if Husky works, if not, make necessary adjustmennts.
