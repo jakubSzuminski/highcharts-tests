@@ -21,7 +21,7 @@
 1. Run tests through Karma for Highcharts library.
 2. Write test that will fail (assertion fails), then run Karma again. Spot the difference in Karma output.
 3. Create a test before the other functionality, that will break the test (throw error), then run it again. Then change it so it will assert fail instead of break the whole test. (ask for hint if needed :))
-3. Change location of testing files from test to "my-tests"
+3. Change location of testing files from "tests" to "my-tests"
 4. Add firefox as supported browser
 5. Create callback function in example 6 from QUnit, so we will receive callbacks (beforeEach and afterEach) with info about the test we are "going to/from".
 6. Change configuration so Karma will open chrome window on run
