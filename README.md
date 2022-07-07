@@ -33,20 +33,11 @@ Testing of individual units (as small independent parts of code as possible) lik
 2. `Integration Tests`
 Testing Processes across several units to achieve their goals, including their side effects.
 
-```
-const fireGunButton = document.getElementById('fire-gun-button')
-fireGunButton.click()
-assert(isFireGunInfoSent())
-```
+An example:
 
-or even
+Let's say that we have an app (and a web app) that has a functionality providing the PIN codes for some devices to be opened / turned-on. Instead of testing all the scenarios (e.g. updating PIN, changing time when PIN works etc.) we may create integration tests to the SMS gate, checking if the connection works, if sending the SMS works etc. Then, all the other functional tests (like update PIN) mock module for sending SMS and test business logic only.
 
-```
-drone.checkIfFireTriggeredBluetooth()
- .then(isFire => assert(isFire))
-```
-
-So, long story short, after unit-testing couple of functions in the app, integration testing allow us to check how they affect each other and if the final output of cooperating functions is correct.
+After unit-testing couple of functions in the app, integration testing allow us to check how they affect each other and if the final output of cooperating functions is correct.
 
 3. `Functional Tests`
 Testing how scenarios function on the product itself, by controlling the browser or the website. These tests usually ignore the internal structure of the application entirety and looks at them from the outside like on a black box.

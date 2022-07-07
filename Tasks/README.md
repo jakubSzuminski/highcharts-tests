@@ -12,15 +12,15 @@
 
 1. Write a test that will check some parameters in Highcharts and will pass with assert.equal but fail with assert.strictEqual
 2. Write a test using assert.ok
-3. Write a test with assertion that will break the code, then change the Qunit test so it will pass. Then edit it so it will fail, but not break the code.
+3. Write a test with assertion that will break the code (throw an error), then change the Qunit test so it will pass even though it is throwing an error.
 4. Write tests for other Highcharts libraries (Maps / Stock / Gantt / Choosen module)
-5. Write a QUnit module containing multiple tests, then write another one and disable it.
-6. In the previous example, add the next module with test, then make the modules nested (grandparent -> parent -> child)
+5. Write a QUnit module containing multiple tests, then write another one and try to disable it using QUnit.module options.
+6. In the previous example, add the next module with test, then make the modules nested (grandparent -> parent -> child). Check what modules will be disabled.
 
 ## Karma
 1. Run tests through Karma for Highcharts library.
-2. Write test that will fail, then run Karma again.
-3. As a first test (alphabetically), create a test that will break Karma, then run it again. Then change it so it will fail instead of break.
+2. Write test that will fail (assertion fails), then run Karma again. Spot the difference in Karma output.
+3. Create a test before the other functionality, that will break the test (throw error), then run it again. Then change it so it will assert fail instead of break the whole test. (ask for hint if needed :))
 3. Change location of testing files from test to "my-tests"
 4. Add firefox as supported browser
 5. Create callback function in example 6 from QUnit, so we will receive callbacks (beforeEach and afterEach) with info about the test we are "going to/from".
@@ -29,6 +29,10 @@
 8. Allow Karma to work with other Highcharts libraries (Maps / Stock / Gantt / Choosen module).
 
 ## Husky
+
+Docs:
+https://typicode.github.io/husky/#/?id=install-1
+
 1. Add Husky to your project, using `npm install husky -D`
 2. Edit package.json > prepare script and run it once:
 ```
