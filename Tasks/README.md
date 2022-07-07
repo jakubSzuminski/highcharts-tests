@@ -2,7 +2,7 @@
 
 ## Initial
 
-1. Test two demos in the tests repository, by opening standard HTML file.
+1. Test two demos in the tests directory, by opening standard HTML file.
 2. Change the assertion so it will check the number of points in the series instead of the number of series.
 3. Write a new test, enable dataLabels and then check if dataLabels are visible on the graph.
 4. Change series color, then write a new test, checking, if series color has changed correctly.
@@ -11,7 +11,7 @@
 ## QUnit
 
 1. Write a test that will check some parameters in Highcharts and will pass with assert.equal but fail with assert.strictEqual
-2. Write a test using assert.ok
+2. Write a test using assert.ok and other assertion methods (the more the merrier)
 3. Write a test with assertion that will break the code (throw an error), then change the Qunit test so it will pass even though it is throwing an error.
 4. Write tests for other Highcharts libraries (Maps / Stock / Gantt / Choosen module)
 5. Write a QUnit module containing multiple tests, then write another one and try to disable it using QUnit.module options.
@@ -51,7 +51,7 @@ git commit -m "Keep calm and commit"
 
 5. Check, if the Husky is working properly, then change the script so test will work on npm test-hc instead of npm test. 
 
-6. If above works, make a commit again and check if Husky works, if not, make necessary adjustmennts.
+6. If above works, make a commit again and check if Husky works, if not, make necessary adjustmennts inn Husky.
 
 # Pixelmatch
 
