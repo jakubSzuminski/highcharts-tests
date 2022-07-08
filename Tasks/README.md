@@ -16,6 +16,7 @@
 4. Write tests for other Highcharts libraries (Maps / Stock / Gantt / Choosen module)
 5. Write a QUnit module containing multiple tests, then write another one and try to disable it using QUnit.module options.
 6. In the previous example, add the next module with test, then make the modules nested (grandparent -> parent -> child). Check what modules will be disabled.
+7. Add some tests using TestController. 
 
 ## Karma
 1. Run tests through Karma for Highcharts library.
