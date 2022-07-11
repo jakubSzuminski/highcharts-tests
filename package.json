@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "test": "./node_modules/karma/bin/karma start",
-    "test-hc": "npx gulp test-ts --force && npx gulp test --force --speak"
   },
   "repository": {
     "type": "git",
