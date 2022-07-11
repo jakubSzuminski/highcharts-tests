@@ -58,4 +58,4 @@ git commit -m "Keep calm and commit"
 
 1. Add pixelmatch to your project, usign `npm install pixelmatch`
 2. Create two images from the chart, moving one dataLabel couple of pixels off the second time.
-3. Use pixelmatch to create an output of the difference image in test directory.
+3. Use pixelmatch to create an output of the difference image in test directory (You may use CLI command for this purpose).
